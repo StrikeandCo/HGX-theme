@@ -1,0 +1,31 @@
+//colors
+$brand-color: #88CA1F !default;
+$white: #FFFFFF !default;
+$light-grey: #E1E7E9 !default;
+$default-font-color: #222629 !default;
+
+
+//typography
+$default-font-size: 16px !default;
+
+//responsive sizes
+$screen-xs-max: 767px !default;
+$screen-sm-min: 768px !default;
+$screen-sm-max: 979px !default;
+$screen-md-min: 980px !default;
+$screen-md-max: 1199px !default;
+$screen-lg-min: 1200px !default;
+
+
+//mobile nav vars
+$line-color: $brand-color;
+$line-hover-color: lighten($brand-color, 10%);
+$line-width: 37px;
+$line-spacing: 26px;
+$line-thickness: 2px;
+
+// Burger Animation Vars
+$transition-time: 0.4s;
+$rotation: 45deg;
+$translateY: ($line-spacing / 2);
+$translateX: 0;

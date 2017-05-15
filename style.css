@@ -1,0 +1,12 @@
+/*
+	Theme Name: Semplice Child Theme
+	Description: Child Theme for Semplice
+	Author: Your name
+	Template: semplice
+*/
+
+@import url('scss/style.css');
+
+/* Custom CSS Start */
+.archives-button, .search-button { display: none; }
+/* Custom CSS End */

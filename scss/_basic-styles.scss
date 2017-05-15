@@ -1,0 +1,101 @@
+body,
+html {
+	font-family: 'Circular-Air';
+	font-size: $default-font-size;
+	color: $default-font-color;
+}
+p {
+	line-height: 1.7;
+}
+h1, h2, h3, h4, h5, h6, ol, p, ul  {
+	margin-bottom: 20px;
+}
+h1 {
+	line-height: 1.3;
+}
+h3 {
+	font-size: 20px;
+	font-weight: bold;
+	color: $brand-color;
+}
+#wrapper {
+	position: static;
+}
+section {
+	display: block;
+	width: 100%;
+	position: relative;
+	float: left;
+	padding-top: 64px;
+	padding-bottom: 60px;
+	.span4 {
+		@media (max-width: $screen-sm-max) {
+			width: 100%;
+			position: relative;
+			top: -30px;
+			&.offset3 {
+				margin-left: 20px;
+				top: 30px;
+			}
+		}
+	}
+	.half-green-overlay {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 50%;
+		height: 100%;
+		background-color: $brand-color;
+		opacity: 0.9;
+		@media (max-width: $screen-sm-max) {
+    	width: 100%;
+    	height: 50%;
+			top: 50%;
+		}
+	}
+	.half-dark-overlay {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 50%;
+		height: 100%;
+		background-color: $default-font-color;
+		opacity: 0.9;
+		@media (max-width: $screen-sm-max) {
+    	width: 100%;
+    	height: 50%;
+			top: 0%;
+		}
+	}
+}
+.brand-bg {
+	background-color: $brand-color;
+	/* Rectangle 7: */
+	background-image: linear-gradient(-45deg, #5DC104 0%, #61D119 37%, #9BE721 100%);
+	* {
+		color: $white;
+	}
+}
+.text-center {
+	text-align: center;
+	p.lead {
+		line-height: 1.2;
+	}
+	@media (min-width: 768px) {
+		&[class*=span] {
+			position: relative;
+			left: -10px;
+		}
+	}
+}
+.lead {
+	font-size: 50px;
+	@media (max-width: 767px) {
+		font-size: 20px;
+	}
+} 
+.visible-sm {
+	@media(min-width: $screen-md-min) {
+		display: none !important;
+	}
+}

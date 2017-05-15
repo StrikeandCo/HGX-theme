@@ -1,0 +1,56 @@
+.cta, .wpcf7-submit {
+	@include border-radius(23px);
+	text-transform: uppercase;
+	background: $brand-color;
+	color: $white;
+	padding: 5px 20px;
+	text-align: center;
+	display: inline-block;
+	width: auto;
+	box-sizing: border-box;
+	border: 2px solid $brand-color;
+	font-weight: bold;
+	font-size: $default-font-size;
+	height: 46px;
+	margin-bottom: 20px;
+	&:hover {
+		background: darken($brand-color, 10%);
+		border: 2px solid darken($brand-color, 10%);
+		color: $white;
+	}
+	&.dark {
+		color: $default-font-color;
+	}
+	&.outline {
+		color: $white;
+		background: transparent;
+		&.dark {
+			color: $default-font-color;
+		}
+		&:hover {
+			background: initial;
+			color: $brand-color;
+		}
+		&.light {
+			border-color: $white;
+			color: $white;
+			&:hover {
+				background-color: rgba(0,0,0,0.10)
+			}
+		}
+	}
+	&.lg {
+		width: 200px;
+	}
+	&.center {
+		margin: 20px auto;
+		display: block;
+	}
+}
+header .cta {
+	padding: 2px 20px;
+	height: 40px;
+}
+.hero .cta.outline {
+	border: 2px solid darken($brand-color, 10%);
+}

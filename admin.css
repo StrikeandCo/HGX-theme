@@ -1,0 +1,18 @@
+/*Carousel overrides*/
+#acf-carousel th {
+    display: none;
+}
+#acf-carousel td.field.sub_field {
+    padding: 10px !important;
+    display: inline-block;
+    width: 100%;
+}
+#acf-carousel .acf-input-wrap {
+    margin-top: -30px;
+    margin-bottom: 7px;
+}
+#poststuff .acf_postbox #acf-carousel p.label {
+    width: 100% !important;
+}
+/* hide default nav menu to make better nav */
+li#menu-posts-custom_navbar { display: none !important; }

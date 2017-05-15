@@ -1,0 +1,72 @@
+.wysiwyg, .wysiwyg p, .wysiwyg pre, .post-heading h2, #post .wysiwyg .meta p span, p.quote, .wysiwyg h1, .wysiwyg h2, .wysiwyg h3, .wysiwyg h4, .wysiwyg h5, .wysiwyg h6, #category-archives h4, h4#comments, .comment-autor, .comment-autor a, .comment-time, .comment-content p, h3#reply-title, .comments-pagination, .meta p a, section#comment h3#comments, .no-results, blockquote p, .quote-container p, .result-header h3 {
+    color: $default-font-color !important;
+}
+.description p, .wysiwyg p, .wysiwyg-ce p {
+	margin-bottom: 20px;
+}
+section#comment {
+  margin-bottom: -162px;
+}
+.wysiwyg h3 {
+    margin-bottom: 20px !important;
+}
+.share-box {
+    display: none !important;
+}
+#content-holder {
+	float: left;
+	width: 100%;
+}
+#content-holder {
+	padding: 60px 0;
+}
+	.span3,
+	.span4,
+	[class*="-span4"], #intro .span6 {
+		margin-bottom: 40px;
+		margin-top: 40px;
+		padding: 20px 50px;
+		position: relative;
+		a {
+			font-size: 12px;
+			text-transform: uppercase;
+			border-bottom: 2px solid $brand-color;
+			color: $default-font-color;
+		}
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 50px;
+			border-top: 2px solid #C7D3D9;
+			width: 20px;
+		}
+		&.green-bg {
+			p,
+			h3 {
+				color: $white;
+			}
+			&:before {
+				border-top: 2px solid $white;
+			}
+			a {
+				border-bottom: 2px solid $white !important;
+				color: $white !important;
+			}
+		}
+		&.dark-bg {
+			p {
+				color: $white;
+			}
+			&:before {
+				border-top: 2px solid $white;
+			}
+			a {
+				color: $white !important;
+			}
+		}
+	}
+#content-holder [class*="-span4"] a {
+	color: $default-font-color !important;
+}

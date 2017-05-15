@@ -1,0 +1,1 @@
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/global.js"></script>

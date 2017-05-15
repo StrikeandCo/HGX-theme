@@ -1,0 +1,50 @@
+#quotes {
+	height: 100vh;
+	min-height: 650px;
+	text-align: center;
+	@media (max-width: 767px) {
+		height: auto;
+		box-sizing: content-box;
+		padding-bottom: 150px;
+	}
+	.unslider {
+		overflow: visible;
+	}
+	.preamble-icon {
+		margin: 0 auto;
+		margin-top: calc(50vh - 370px);
+		@media (max-width: $screen-xs-max) {
+			margin-top: 0;
+		}
+	}
+	.quote-container {
+		overflow: visible !important;
+		margin-top: 40px;
+	}
+	.avatar {
+		background: #efefef;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 60px auto 10px auto;
+    border-radius: 25px;
+	}
+	p.the-quote {
+		font-size: 30px;
+		line-height: 2;
+		@media (max-width: 767px) {
+			font-size: 20px;
+		}
+	}
+	p.name {
+		font-size: $default-font-size;
+		font-weight: bold;
+		margin-bottom: 0px;
+	}
+	p.location {
+		font-size: 14px;
+		font-style: italic;
+		margin-top: -15px;
+	}
+}
+	
