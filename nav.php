@@ -5,6 +5,7 @@
  */
 $addr = '551 Taylor Way' . "\n" . 'San Carlos, CA' . "\n" . '94070';
 $address = get_theme_mod('company_address', $addr);
+$addrlink = str_replace("\r\n","",$address);
 $phone = get_theme_mod('company_phone_number','650-218-5836');
 $email = get_theme_mod('company_email','hello@hgxfit.com');
 $instagram = get_theme_mod('instagram','HGXFIT');
@@ -25,6 +26,7 @@ $footerform = get_theme_mod('footer_form','');
 			</hgroup>
 		<?php endif; ?>
 		<nav>
+			<div class="logobg"></div>
 			<div class="hidden-xs"><?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?><a href="<?php echo get_theme_mod( 'nav_cta_url'); ?>" class="cta outline"><?php echo get_theme_mod('nav_cta_label'); ?></a>
 
 			</div>
@@ -33,6 +35,7 @@ $footerform = get_theme_mod('footer_form','');
 					<p>CONTACT</p>
 					<p><a class="item" href="mailto:<?php echo get_theme_mod('company_email', 'hello@hgxfit'); ?>"><?php echo get_theme_mod('company_email', 'hello@hgxfit'); ?></a></p>
 					<p><a class="item" href="tel:+1-<?php echo $phone; ?>"><?php echo $phone; ?></a></p>
+				<p><a href="https://maps.google.com/?q=<?php echo get_bloginfo( 'name' ); ?> <?php echo $addrlink; ?>" target="_blank">Get Directions</a></p>
 				</div>
 			</div>
 			

@@ -37,6 +37,39 @@ header {
 		}
 	}
 	nav {
+		.contactstuff {
+			margin: 20px 0;
+			display: block;
+			float: left;
+			width: 100%;
+			p {
+				color: #FFFFFF;
+				padding: 8px 35px;
+				width: 100%;
+				display: block;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+				margin: 0;
+				a {
+					color: $brand-color;
+					width: 100%;
+					display: block;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		.logobg {
+			height: 80px;
+			width: 280px;
+			background: #222629;
+			display: block;
+			position: fixed;
+			top: 0;
+			z-index: 1;
+    	left: -280px;
+			transition: all 0.25s ease-in-out;
+		}
 		//mobile first
 		@media (max-width: $screen-sm-max) {
 			display: block;
@@ -56,9 +89,13 @@ header {
 				left: 280px;
 				top: 0;
 				box-shadow: 0px 0px 60px #000;
+				z-index: 99;
 			}
 			&.active {
 				left: 0;
+				.logobg {
+					left: 0;
+				}
 			}
 
 		}
@@ -89,6 +126,14 @@ header {
 					position: static;
 					width: auto;
 				}
+			@media (max-width: $screen-xs-max) {
+				position: relative;
+				left: 0px;
+				top: 0px;
+				margin-top: 80px;
+				margin-left: 0px;
+				width: 100%;
+			}
 			li {
 				width: 100%;
 				@media(min-width: $screen-md-min) {
