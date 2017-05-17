@@ -77,6 +77,9 @@
       margin-bottom: 20px;
       letter-spacing: 2px;
       font-weight: normal;
+      @media(max-width: $screen-xs-max) {
+        font-size: 30px;
+      }
     }
     p {
       color: $white;
@@ -299,6 +302,9 @@
       font-size: 60px;
       color: $brand-color;
       font-weight: bold;
+      @media(max-width: $screen-xs-max) {
+        font-size: 45px;
+      }
       .dollar {
         font-size: 0.5em;
         position: relative;

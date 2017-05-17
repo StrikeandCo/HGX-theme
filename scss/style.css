@@ -1256,6 +1256,9 @@ header {
       margin-bottom: 20px;
       letter-spacing: 2px;
       font-weight: 400; }
+      @media (max-width: 767px) {
+        #hp-carousel .cta-container h1 {
+          font-size: 30px; } }
     #hp-carousel .cta-container p {
       color: #FFFFFF; }
       #hp-carousel .cta-container p b,
@@ -1591,6 +1594,9 @@ textarea {
       margin-bottom: 20px;
       letter-spacing: 2px;
       font-weight: normal; }
+      @media (max-width: 767px) {
+        .hero .cta-container h1 {
+          font-size: 30px; } }
     .hero .cta-container p {
       color: #FFFFFF; }
       .hero .cta-container p b,
@@ -1776,6 +1782,9 @@ textarea {
     font-size: 60px;
     color: #88CA1F;
     font-weight: bold; }
+    @media (max-width: 767px) {
+      #plansandpricing .prices .price {
+        font-size: 45px; } }
     #plansandpricing .prices .price .dollar {
       font-size: 0.5em;
       position: relative;

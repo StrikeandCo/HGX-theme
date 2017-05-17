@@ -55,6 +55,9 @@
 			margin-bottom: 20px;
 			letter-spacing: 2px;
 			font-weight: 400;
+			@media (max-width: $screen-xs-max) {
+				font-size: 30px;
+			}
 		}
 		p {
 			color: $white;
