@@ -52,6 +52,7 @@ if( have_rows('carousel') ):	?>
 		<div class="thectas">
 			
 			<h1><?php echo get_field('page_title'); ?></h1>
+			<p><?php echo get_field('page_subtitle');?></p>
 			<?php if(get_field('primary_cta_copy') & get_field('primary_cta_url')) { ?>
 				<a class="cta" href="<?php echo get_field('primary_cta_url'); ?>"><?php echo get_field('primary_cta_copy'); ?></a>
 			<?php } ?>
