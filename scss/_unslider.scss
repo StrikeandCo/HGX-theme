@@ -26,18 +26,22 @@
 }
 .unslider-nav ol li {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   margin: 0 7px;
-  border-radius: 8px;
+  border-radius: 5px;
   overflow: hidden;
   text-indent: -999em;
   cursor: pointer;
   border: 0;
 	background: $light-grey;
-  opacity: 0.6;
+  opacity: 0.3;
 	&.unslider-active {
 		background-color: $brand-color;
     cursor: default;
+    opacity: 1;
 	}
+}
+#quotes .unslider-nav ol li {
+  opacity: 1;
 }
