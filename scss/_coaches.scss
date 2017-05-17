@@ -96,7 +96,9 @@
       margin-top: -187px;
       text-align: right;
       p {
-        float: right;
+        float: left;
+        font-weight: bold;
+        color: lighten($default-font-color, 10%);
       }
       @media (max-width: $screen-sm-max) {
         margin-left: 234px;

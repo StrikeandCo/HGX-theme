@@ -2,9 +2,13 @@
 @include font-face(Circular-Air, fonts/Circular-Air-Pro-Light, normal, normal, otf ttf);
 @include font-face(Circular-Air, fonts/Circular-Air-Pro-Light-Italic, normal, italic, otf ttf);
 
+//medium
+@include font-face(Circular-Air, fonts/Circular-Air-Pro-Medium, 600, normal, otf ttf);
+@include font-face(Circular-Air, fonts/Circular-Air-Pro-Medium-Italic, 600, italic, otf ttf);
+
 //bold weight
-@include font-face(Circular-Air, fonts/Circular-Air-Pro-Bold, 500, normal, otf ttf);
-@include font-face(Circular-Air, fonts/Circular-Air-Pro-Bold-Italic, 500, italic, otf ttf);
+@include font-face(Circular-Air, fonts/Circular-Air-Pro-Bold, 700, normal, otf ttf);
+@include font-face(Circular-Air, fonts/Circular-Air-Pro-Bold-Italic, 700, italic, otf ttf);
 
 //social icons
 @font-face {
