@@ -3,6 +3,7 @@
  * functions
  * semplice.child.theme
  */
+libxml_use_internal_errors(true);
 require_once get_stylesheet_directory() . '/lib/class-tgm-plugin-activation.php';
 
  
@@ -460,11 +461,10 @@ function force_balanced_tags2( $markup ) {
 	$markup = str_replace( array( '<body>', '</body>' ), '', $dom->saveHTML( $body ) );
 	return $markup;
 }
-
 //allow code in excerpt
 function wpse_allowedtags() {
     // Add custom tags to this string
-        return '<script>,<style>,<br>,<em>,<i>,<ul>,<ol>,<li>,<a>,<p>,<img>,<video>,<audio>'; 
+        return '<script>,<style>,<br>,<em>,<i>,<ul>,<ol>,<li>,<a>,<p>,<img>,<h1>,<h2>,<h3>,<h4>,<video>,<audio>'; 
     }
 
 if ( ! function_exists( 'wpse_custom_wp_trim_excerpt' ) ) : 

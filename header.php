@@ -10,7 +10,7 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<meta name="description" content="<?php bloginfo('description'); ?>">
-		<title><?php bloginfo('name'); ?><?php wp_title('&rsaquo;'); ?></title>
+		<title><?php bloginfo('name'); ?> | <?php wp_title('&rsaquo;'); ?></title>
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<link type="text/css" rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/reset.css">

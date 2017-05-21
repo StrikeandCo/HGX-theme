@@ -35,7 +35,7 @@
 </div>
 <?php 
 							$args = array(
-                   'cat' => '5',
+                   //'cat' => '5',
                    'post_type' => 'post',
                    'posts_per_page' => 6,
                    'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),

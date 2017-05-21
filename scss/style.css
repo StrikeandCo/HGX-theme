@@ -1297,14 +1297,14 @@ header {
 
 #quotes {
   height: 100vh;
-  max-height: 800px;
   min-height: 650px;
   text-align: center; }
   @media (max-width: 767px) {
     #quotes {
       height: auto;
       box-sizing: content-box;
-      padding-bottom: 150px; } }
+      padding-bottom: 150px;
+      max-height: 800px !important; } }
   #quotes .unslider {
     overflow: visible; }
   #quotes .preamble-icon {
@@ -1942,14 +1942,16 @@ textarea {
       display: inline-block; }
 #wodposts .navigation {
   text-align: left;
-  float: left; }
+  float: left;
+  margin-left: 90px; }
   #wodposts .navigation span, #wodposts .navigation a {
     display: inline-block;
     margin-right: 20px;
     line-height: 1.8; }
     @media (max-width: 767px) {
       #wodposts .navigation span, #wodposts .navigation a {
-        margin-right: 10px; } }
+        margin-right: 10px;
+        margin-left: 0px; } }
   #wodposts .navigation a.num, #wodposts .navigation span.current {
     height: 30px;
     width: 30px;
@@ -1968,12 +1970,14 @@ textarea {
     color: #222629; }
 #wodposts .pagination {
   float: right;
-  text-align: right; }
+  text-align: right;
+  margin-right: 10px; }
   @media (max-width: 767px) {
     #wodposts .pagination {
       width: 100%;
       text-align: left;
-      margin-top: 20px; } }
+      margin-top: 20px;
+      margin-right: 0px; } }
 
 #form-overlay {
   width: 100vw;

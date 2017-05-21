@@ -1,12 +1,12 @@
 #quotes {
 	height: 100vh;
-	max-height: 800px;
 	min-height: 650px;
 	text-align: center;
 	@media (max-width: 767px) {
 		height: auto;
 		box-sizing: content-box;
 		padding-bottom: 150px;
+		max-height: 800px !important;
 	}
 	.unslider {
 		overflow: visible;

@@ -503,12 +503,14 @@
   .navigation {
     text-align: left;
     float: left;
+    margin-left: 90px;
     span, a {
       display: inline-block;
       margin-right: 20px;
       line-height: 1.8;
       @media(max-width: $screen-xs-max) {
         margin-right: 10px;
+        margin-left: 0px;
       }
     }
     a.num, span.current {
@@ -531,10 +533,12 @@
   .pagination {
     float: right;
     text-align: right;
+    margin-right: 10px;
     @media(max-width: $screen-xs-max) {
       width: 100%;
       text-align: left;
       margin-top: 20px;
+      margin-right: 0px;
     }
   }
 }

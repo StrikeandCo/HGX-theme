@@ -86,58 +86,40 @@ endif;
 
 		?>
 	
-	<?php if(get_field('cover_visibility') === 'visible') : ?>
-	<?php get_template_part('partials/fullscreen-cover'); ?>
-	<?php endif; ?>
-	
-	<?php if(!isset($_GET['cover-slider'])) : # if cover slider display no content ?>
-		<!-- content fade -->
-		<div class="fade-content">
-			<?php
-				// Remove wpautop
-				remove_filter('the_content', 'wpautop');
+<?php if( have_rows('columns') ) { ?>
 
-				// get content
-				$content = get_post_meta( get_the_ID(), 'semplice_ce_content', true );
-
-				// strip out double quotes on bg images
-				$content = remove_esc_bg_quotes($content);
-
-				// output content
-				$output = apply_filters('the_content', $content);
-
-				echo $output;
-				
-				// reset postdata
-				wp_reset_postdata();
-			?>
-		</div>
-		
-		<?php if(get_field('share_visibility') === 'visible' && get_field('global_share_visbility', 'options') !== 'hidden') : ?>
-			<div class="share-box fade-content">
-				<div class="container">
-					<?php get_template_part('partials/share'); ?>
+	<section id="intro" style="padding-top:140px;">
+		<div class="container">
+			<div class="row">
+				<?php while ( have_rows('columns') ) : the_row(); ?>
+				<div class="span4">
+					<h3><?php echo get_sub_field('column_title'); ?></h3>
+					<p><?php echo get_sub_field('column_content'); ?></p>
+					<?php if (get_sub_field('column_url')) { ?>
+					<a href="<?php echo get_sub_field('column_url') ?>"><?php echo get_sub_field('column_link'); ?></a>
+				<?php } ?>	
+				</div>
+					<?php endwhile; ?>
 				</div>
 			</div>
-		<?php endif; ?>
-		
-
-	<?php endif; ?>
+		</div>
+	</section>
+	<?php } ?>
 	
 	<section class="twobg" style="background-color: rgba(34,38,41,1)">
 		<div class="container">
 			<div class="row">
 				<div class="half-dark-overlay" style="background: linear-gradient(rgba(34, 38, 41, 0.9), rgba(34, 38, 41, 0.9)), url(<?php echo get_stylesheet_directory_uri(); ?>/images/hp-left-bg.jpg); background-size: cover;"></div>
 				<div class="span4 dark-bg">
-					<h3>The Facility</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at elementum arcu. Phasellus facilisis, libero in semper sodales.</p>
-					<a href="#">Learn more</a>
+					<h3>Space To Grow</h3>
+					<p>Our 4,500 sq foot indoor facility includes Olympic lifting area, Gymnastics, Lounge, Parking, and Showers</p>
+					<a href="/about/#carousel">See more</a>
 				</div>
 				<div class="half-green-overlay" style="background: linear-gradient(rgba(136, 202, 31, 0.9), rgba(136, 202, 31, 0.8	)), url(<?php echo get_stylesheet_directory_uri(); ?>/images/hp-right-bg.jpg); background-size: cover;"></div>
 				<div class="span4 offset3 green-bg">
 					<h3>HGX Community</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at elementum arcu. Phasellus facilisis, libero in semper sodales.</p>
-					<a href="#">Learn more</a>
+					<p>Real people, getting real fitness, showing real results. And having fun in the process. Come along for the ride.</p>
+					<a href="https://www.instagram.com/hgxfit/" target="_blank">Follow Us On Instagram</a>
 				</div>
 			</div>
 		</div>
@@ -149,21 +131,21 @@ endif;
 			<div class="quote-container">
 				<ul>
 					<li>
-						<p class="the-quote">I stopped my regular running routine three months ago to try CrossFit, despite a thrashed shoulder. This morning, I ran one of my standard routes again just for kicks (1st time in 3 months), and my avg. pace per mile was 26 seconds faster than my previous PR from when I was running regularly. Thank you, HGX! You guys work miracles.</p>
-						<div class="avatar"></div>
-						<p class="name">Jenny Duckworth</p>
-						<p class="location">San Carlos</p>
+						<p class="the-quote">I have been a member with this Box for over 4 years, and it has been one the best decisions I have made in my life.  I am stronger than ever, and I have met some amazing people that not only inspire me but also make me laugh.</p>
+						<img class="avatar" src="<?php echo get_stylesheet_directory_uri(); ?>/images/devon_c.jpg">
+						<p class="name">Devon C</p>
+						<p class="location">Silicon Valley, CA</p>
 					</li>
 					<li>
-						<p class="the-quote">I stopped my regular running routine three months ago to try CrossFit, despite a thrashed shoulder. This morning, I ran one of my standard routes again just for kicks (1st time in 3 months), and my avg. pace per mile was 26 seconds faster than my previous PR from when I was running regularly. Thank you, HGX! You guys work miracles.</p>
-						<div class="avatar"></div>
-						<p class="name">Jenny Stuckworth</p>
-						<p class="location">San Carlos</p>
+						<p class="the-quote">I have been a member here for over 3 years and it is always fun to show up for the workout of the day. The workouts are challenging and can be modified to fit anyone's level. The coaches are great at working with you and making sure you are doing all the exercises right. It's a very inclusive community and all the members, coaches, and the owners  are very friendly.</p>
+						<img class="avatar" src="<?php echo get_stylesheet_directory_uri(); ?>/images/karin_l.jpg">
+						<p class="name">Karin L.</p>
+						<p class="location">San Carlos, CA</p>
 					</li>
 					<li>
-						<p class="the-quote">I stopped my regular running routine three months ago to try CrossFit, despite a thrashed shoulder. This morning, I ran one of my standard routes again just for kicks (1st time in 3 months), and my avg. pace per mile was 26 seconds faster than my previous PR from when I was running regularly. Thank you, HGX! You guys work miracles.</p>
-						<div class="avatar"></div>
-						<p class="name">Jenny Buckworth</p>
+						<p class="the-quote">I am so grateful that Homegrown has such professional instructors who can push you further than you thought you could go and still help guide you in keeping your body safe in all of your mechanics. I am a total Crossfit beginner and I find myself day dreaming about what the next WOD will be.</p>
+						<img class="avatar" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ankita.jpg">
+						<p class="name">Ankita T.</p>
 						<p class="location">San Carlos</p>
 					</li>
 				</ul>
@@ -198,11 +180,12 @@ endif;
 	<script>
 	$ = jQuery;
 	$(document).ready(function() {
-		$('.quote-container').unslider({
-			animation: 'fade',
-			autoplay: true,
-			arrows: false,
-			delay: 5000
+		var slider = $('.quote-container').unslider({ animation: 'fade', autoplay: true, arrows: false, delay: 5000 });
+		var theHeight = $('.unslider-active .the-quote').height();
+		$('#quotes').css({'height' : theHeight + 600 + 'px', 'max-height' : 'none'});
+		slider.on('unslider.change', function(event, index, $slide) {
+			var theHeight = $('.unslider-active .the-quote').height();
+			$('#quotes').css({'height' : theHeight + 600 + 'px', 'max-height' : 'none'});
 		});
 	});
 </script>
