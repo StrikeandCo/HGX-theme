@@ -16,7 +16,7 @@
   $coach_name_shrt = str_replace([' ', '.'], '', $coach_name);
   $circle_thumb = wp_get_attachment_image_url($coach_image, 'Coach - round thumbnail' );
   $full_image = wp_get_attachment_image_url($coach_image, 'Coach - expanded overlay image');
-  
+  $raspberries = "WOOOOO";
 //begin UI
 ?>
 
