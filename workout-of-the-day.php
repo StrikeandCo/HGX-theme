@@ -75,4 +75,4 @@
 
 <?php } ?>
 
-<?php get_footer(); # inlude footer ?>
+<?php get_footer(); # include footer ?>

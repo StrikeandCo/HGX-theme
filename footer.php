@@ -34,7 +34,7 @@ while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 			<div class="row">
 				<div class="text-center span10 offset1">
 					<p class="lead">
-						"<?php echo get_field('quote'); ?>"
+						<?php echo get_field('quote'); ?>
 					</p>
 					<p><strong><?php echo get_field('tagline'); ?>.</strong></p>
 				</div>

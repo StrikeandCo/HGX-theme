@@ -45,7 +45,7 @@
 					<h3><?php echo get_sub_field('column_title'); ?></h3>
 					<p><?php echo get_sub_field('column_content'); ?></p>
 					<?php if (get_sub_field('learn_more_url')) { ?>
-					<a href="<?php echo get_sub_field('learn_more_url') ?>">Learn more</a>
+					<!--<a href="<?php echo get_sub_field('learn_more_url') ?>">Learn more</a>-->
 				<?php } ?>	
 				</div>
 					<?php endwhile; ?>

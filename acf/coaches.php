@@ -287,7 +287,7 @@ if(function_exists("register_field_group"))
 						'formatting' => 'html',
 						'maxlength' => '',
 					),
-					array (
+					/*array (
 						'key' => 'field_59053e6781478',
 						'label' => 'Learn more URL',
 						'name' => 'learn_more_url',
@@ -301,7 +301,7 @@ if(function_exists("register_field_group"))
 						'append' => '',
 						'formatting' => 'html',
 						'maxlength' => '',
-					),
+					),*/
 				),
 				'row_min' => 2,
 				'row_limit' => 2,
@@ -717,7 +717,7 @@ if(function_exists("register_field_group"))
 			array (
 				'key' => 'field_59053bed4ca18',
 				'label' => 'Section 2 learn more URL',
-				'name' => 'section_1_learn_more_url',
+				'name' => 'section_2_learn_more_url',
 				'type' => 'text',
 				'instructions' => 'Add a "Learn More" text link next to the CTA. Leave blank if you do not want one.',
 				'default_value' => '',

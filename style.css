@@ -11,3 +11,44 @@
 /* Custom CSS Start */
 .archives-button, .search-button { display: none; }
 /* Custom CSS End */
+.span3 a, .span4 a, [class*="-span4"] a, #intro .span6 a {
+    font-size: 12px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #88CA1F;
+    color: #222629;
+    font-weight: 600;
+}
+#quotes .preamble-icon {
+    margin: 0 auto;
+    margin-top: calc(50% - 480px);
+}
+#getstarted #section1 .learnmore-link, #getstarted #section2 .learnmore-link { font-weight: 600; }
+@media (max-width: 1199px) {
+	.span4 {
+		width: 284px;
+	}
+}
+@media (max-width: 768px) {
+ #quotes .preamble-icon {
+  margin-top: 0;
+ }
+}
+@media (min-width: 768px) {
+.coach-contain {
+overflow-y: scroll !important;
+}
+}
+@media (min-width: 768px) {
+.coach-contain .content {
+	
+    float: left;
+    display: block;
+    width: calc(100% - 331px);
+
+}
+}
+#themap p, #themap h2 {
+    color: #FFFFFF;
+    text-shadow: none !important;
+    font-weight: 600;
+}
