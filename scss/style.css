@@ -591,6 +591,10 @@ section#comment {
 #content-holder {
   padding: 60px 0; }
 
+@media (min-width: 768px) and (max-width: 979px) {
+  .hidden-sm {
+    display: none !important; } }
+
 .span3,
 .span4,
 [class*="-span4"], #intro .span6 {
@@ -753,6 +757,12 @@ footer {
   @media (max-width: 979px) {
     footer {
       height: auto; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    footer .hidden-sm {
+      display: none !important; } }
+  @media (min-width: 980px) and (max-width: 1199px) {
+    footer .hidden-md {
+      display: none !important; } }
   footer [class*="span"] {
     padding: 20px 16px;
     margin: 0; }
@@ -764,6 +774,13 @@ footer {
     font-size: 18px; }
   footer .span4 {
     width: 33.3332%; }
+    footer .span4.deets {
+      width: 27%; }
+    @media (max-width: 1199px) {
+      footer .span4 {
+        width: 60%; }
+        footer .span4.deets {
+          width: 40%; } }
     footer .span4 li a {
       color: #C3CFD4;
       font-size: 16px;
@@ -983,7 +1000,8 @@ footer {
   font-weight: bold;
   font-size: 16px;
   height: 46px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  -webkit-appearance: none; }
   .cta:hover, .wpcf7-submit:hover {
     background: #6a9e18;
     border: 2px solid #6a9e18;
@@ -2006,6 +2024,9 @@ textarea {
       position: absolute;
       left: 0;
       top: -20px; }
+  @media (min-width: 980px) {
+    #form-overlay .content {
+      margin-top: 45px; } }
   #form-overlay a.item, #form-overlay p.item {
     font-size: 20px;
     color: #88CA1F;

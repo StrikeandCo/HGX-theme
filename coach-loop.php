@@ -4,7 +4,9 @@
   //Variables for various fields
   $coach_image = get_field( "coach_image" );
 ?>
-
+<?php if ( $loop->have_posts() ) { ?>
+<section id="coaches">
+		<div class="container">
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 <?php
   //Variables for various fields
@@ -48,7 +50,9 @@
   
 //and now a little javascript magic  
 ?>
-
+		</div>
+	</section>
+<?php } ?>
   
 <script>
 $ = jQuery;

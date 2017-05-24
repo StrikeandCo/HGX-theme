@@ -36,11 +36,11 @@ while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 					<p class="lead">
 						<?php echo get_field('quote'); ?>
 					</p>
-					<p><strong><?php echo get_field('tagline'); ?>.</strong></p>
+					<?php if (get_field('tagline')) { ?><p><strong><?php echo get_field('tagline'); ?></strong></p><?php } ?>
 				</div>
 			</div>
 			<div class="row">
-				<a href="<?php echo get_field('cta_url'); ?>" class="cta outline light lg center"><?php echo get_field('cta_copy'); ?></a>
+				<?php if (get_field('cta_url')) { ?><a href="<?php echo get_field('cta_url'); ?>" class="cta outline light lg center"><?php echo get_field('cta_copy'); ?></a><?php } ?>
 			</div>
 		</div>
 	</section>
@@ -59,7 +59,7 @@ wp_reset_query(); ?>
 				</div>
 				<?php } ?>
 				
-			<div class="span4">
+			<div class="span4 deets">
 				<p>
 					<a class="tel" href="tel:+1-<?php echo $phone; ?>"><?php echo $phone; ?></a>
 				</p>
@@ -79,7 +79,7 @@ wp_reset_query(); ?>
 			<div class="span4">
 				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu-1' ) ); ?>
 			</div>
-			<div class="span4">
+			<div class="span4 hidden-md">
 				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu-2' ) ); ?>
 			</div>
 		</div>
@@ -123,7 +123,7 @@ wp_reset_query(); ?>
 		</div>
 		</div>
 		<div class="row content">
-			<div class="span5">
+			<div class="span5 content">
 				<p class="pretext">Give us a call or shoot us a text</p>
 				<a class="item" href="tel:+1-<?php echo $phone; ?>"><?php echo $phone; ?></a>
 				

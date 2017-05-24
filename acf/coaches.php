@@ -116,7 +116,6 @@ if(function_exists("register_field_group"))
 				'name' => 'tagline',
 				'type' => 'text',
 				'instructions' => 'Add some small text to set under the quote tagline.',
-				'required' => 1,
 				'default_value' => 'Come on down. Your first class is on us',
 				'placeholder' => 'Enter text here',
 				'prepend' => '',

@@ -572,6 +572,11 @@
       top: -20px;
     }
   }
+  .content {
+    @media (min-width: $screen-md-min) {
+      margin-top: 45px;
+    }
+  }
   a.item, p.item {
     font-size: 20px;
     color: $brand-color;

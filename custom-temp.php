@@ -180,7 +180,7 @@ endif;
 	<script>
 	$ = jQuery;
 	$(document).ready(function() {
-		var slider = $('.quote-container').unslider({ animation: 'fade', autoplay: true, arrows: false, delay: 5000 });
+		var slider = $('.quote-container').unslider({ animation: 'fade', autoplay: true, arrows: false, delay: 8000 });
 		var theHeight = $('.unslider-active .the-quote').height();
 		$('#quotes').css({'height' : theHeight + 600 + 'px', 'max-height' : 'none'});
 		$(window).resize(function() {

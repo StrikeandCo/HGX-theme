@@ -13,6 +13,7 @@
 	font-size: $default-font-size;
 	height: 46px;
 	margin-bottom: 20px;
+	-webkit-appearance: none;
 	&:hover {
 		background: darken($brand-color, 10%);
 		border: 2px solid darken($brand-color, 10%);

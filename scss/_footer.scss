@@ -9,6 +9,17 @@ footer {
 	@media(max-width: $screen-sm-max) {
 		height: auto;
 	}
+.hidden-sm {
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+		display: none !important;
+	}
+}
+.hidden-md {
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+		display: none !important;
+	}
+}
+
 	[class*="span"] {
 		padding: 20px 16px;
 		margin: 0;
@@ -23,6 +34,15 @@ footer {
 	}
 	.span4 {
 		width: 33.3332%;
+		&.deets {
+			width: 27%;
+		}
+		@media(max-width: $screen-md-max) {
+			width: 60%;
+			&.deets {
+				width: 40%;
+			}
+		}
 		li a {
 			color: #C3CFD4;
 			font-size: $default-font-size;

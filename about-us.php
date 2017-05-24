@@ -54,11 +54,8 @@
 		</div>
 	</section>
 	<?php } ?>
-	<section id="coaches">
-		<div class="container">
-			<?php get_template_part('coach-loop'); ?>
-		</div>
-	</section>
+	<?php get_template_part('coach-loop'); ?>
+
 <?php if (have_rows('content_carousel')) { ?>	
 <section id="carousel">
 	<div class="thecarousel">
@@ -107,8 +104,8 @@
 <section id="themap">
 	<div class="loc-content">
 		<h2>Location</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at elementum arcu. Phasellus facilisis, libero in semper sodales.</p>
-		<p><a href="#">Learn more</a></p>
+		<p>We are right in the heart of Silicon Valley with easy access to 101 and 92.</p>
+		<p><a href="https://www.google.com/maps?q=Homegrown+Crossfit+551+Taylor+WaySan+Carlos,+CA94070" target="_blank">Learn more</a></p>
 	</div>
 </section>
 <?php if (get_field('wodify_iframe')) { ?>

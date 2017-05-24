@@ -20,6 +20,11 @@ section#comment {
 #content-holder {
 	padding: 60px 0;
 }
+.hidden-sm {
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+		display: none !important;
+	}
+}
 	.span3,
 	.span4,
 	[class*="-span4"], #intro .span6 {
