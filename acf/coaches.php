@@ -799,7 +799,7 @@ if(function_exists("register_field_group"))
 		),
 		'menu_order' => 0,
 	));
-	register_field_group(array (
+register_field_group(array (
 		'id' => 'acf_plan-fields',
 		'title' => 'Plan fields',
 		'fields' => array (
@@ -853,43 +853,63 @@ if(function_exists("register_field_group"))
 						'formatting' => 'html',
 						'maxlength' => '',
 					),
-					array (
-						'key' => 'field_59026a54a41da',
-						'label' => 'price',
-						'name' => 'price',
-						'type' => 'text',
-						'instructions' => 'Enter the price',
-						'required' => 1,
-						'column_width' => '',
-						'default_value' => '',
-						'placeholder' => '',
-						'prepend' => '',
-						'append' => '',
-						'formatting' => 'html',
-						'maxlength' => '',
-					),
-					array (
-						'key' => 'field_59026a85a41db',
-						'label' => 'Add pricing details',
-						'name' => 'add_pricing_details',
-						'type' => 'textarea',
-						'instructions' => 'Add pricing details here. HTML/CSS is allowed.',
-						'required' => 1,
-						'column_width' => '',
-						'default_value' => '',
-						'placeholder' => '',
-						'maxlength' => '',
-						'rows' => '',
-						'formatting' => 'html',
-					),
-				),
+            array (
+            'key' => 'field_590269e5a41a1',
+            'label' => 'Price',
+            'name' => 'plan_price',
+            'type' => 'repeater',
+            'instructions' => 'Add a price',
+            'required' => 1,
+            'sub_fields' => array (
+              array (
+                'key' => 'field_59026a54a41da',
+                'label' => 'price',
+                'name' => 'price',
+                'type' => 'text',
+                'instructions' => 'Enter the price',
+                'required' => 1,
+                'column_width' => '',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+              ),
+              array (
+                'key' => 'field_59026a85a41db',
+                'label' => 'Add pricing details',
+                'name' => 'add_pricing_details',
+                'type' => 'textarea',
+                'instructions' => 'Add pricing details here. HTML/CSS is allowed.',
+                'required' => 1,
+                'column_width' => '',
+                'default_value' => '',
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'formatting' => 'html',
+              ),
+				    ),
 				'row_min' => 1,
-				'row_limit' => 3,
+				'layout' => 'row',
+				'button_label' => 'Add Price',
+        ),
+			),
+        'row_min' => 1,
 				'layout' => 'row',
 				'button_label' => 'Add Row',
-			),
 		),
-		'location' => array (
+		
+    ),
+    
+    
+    
+    
+    
+    
+    
+    'location' => array (
 			array (
 				array (
 					'param' => 'post_type',
@@ -922,6 +942,8 @@ if(function_exists("register_field_group"))
 		),
 		'menu_order' => 0,
 	));
+
+
 	register_field_group(array (
 		'id' => 'acf_plans-and-pricing-page',
 		'title' => 'Plans and pricing page',
