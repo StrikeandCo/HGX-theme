@@ -468,7 +468,7 @@ if(function_exists("register_field_group"))
 				'required' => 1,
 				'default_value' => '',
 				'placeholder' => '',
-				'maxlength' => 800,
+				'maxlength' => '',
 				'rows' => '',
 				'formatting' => 'br',
 			),

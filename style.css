@@ -32,6 +32,7 @@
  #quotes .preamble-icon {
   margin-top: 0;
  }
+
 }
 @media (min-width: 768px) {
 .coach-contain {
@@ -51,4 +52,53 @@ overflow-y: scroll !important;
     color: #FFFFFF;
     text-shadow: none !important;
     font-weight: 600;
+}
+@media (max-width: 768px) {
+	header {
+		background-color: #191A1B;
+		top: 0px !important;
+		
+	}
+	header.downward {
+		top: 0px !important;
+	}
+}
+@media (min-width: 980px) {
+#getstarted #section1 img, #getstarted #section2 img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+#getstarted #section2 .whitebox {
+    bottom: 0px;
+    right: 0;
+}
+#getstarted #section2 .content {
+    z-index: 2;
+    bottom: 0px;
+    right: 0;
+}
+#getstarted #section1, #getstarted #section2 {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+#getstarted #section2 {
+	margin-bottom: 0px;
+}
+}
+@media (max-width: 767px) {
+.full-bio.active {
+    height: auto;
+}
+}
+.coach a .name {
+    font-weight: 600;
+}
+#aboutus #intro {
+    margin-bottom: -50px;
 }
