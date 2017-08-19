@@ -102,3 +102,45 @@ overflow-y: scroll !important;
 #aboutus #intro {
     margin-bottom: -50px;
 }
+
+/*changes to plans and pricing*/
+@media (min-width: 980px) {
+#plansandpricing .prices .tier:nth-child(n+2) {
+    border-left: none;
+	}
+	#plansandpricing .prices {
+		border-left: 1px solid #CFCFCF;
+		box-sizing: border-box;
+		padding-left: 40px;
+		padding-right: 10px;
+	}
+}
+#plansandpricing .prices .tier {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    vertical-align: top;
+    text-align: left;
+}
+#plansandpricing .prices .tiertitle {
+    text-transform: uppercase;
+    display: inline-block;
+    max-width: none;
+    font-weight: bold;
+}
+#plansandpricing .prices .price {
+    font-size: 30px;
+    color: #88CA1F;
+    font-weight: bold;
+}
+#plansandpricing #plans p {
+    margin-bottom: 10px;
+}
+#plansandpricing .prices .price .dollar {
+    font-size: 0.7em;
+    position: relative;
+    top: 0px;
+}
+#plans a.cta.lg {
+    margin-top: 20px;
+}

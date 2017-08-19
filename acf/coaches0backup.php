@@ -799,7 +799,7 @@ if(function_exists("register_field_group"))
 		),
 		'menu_order' => 0,
 	));
-register_field_group(array (
+	register_field_group(array (
 		'id' => 'acf_plan-fields',
 		'title' => 'Plan fields',
 		'fields' => array (
@@ -853,63 +853,43 @@ register_field_group(array (
 						'formatting' => 'html',
 						'maxlength' => '',
 					),
-            array (
-            'key' => 'field_590269e5a41a1',
-            'label' => 'Price',
-            'name' => 'plan_price',
-            'type' => 'repeater',
-            'instructions' => 'Add a price',
-            'required' => 1,
-            'sub_fields' => array (
-              array (
-                'key' => 'field_59026a54a41da',
-                'label' => 'price',
-                'name' => 'price',
-                'type' => 'text',
-                'instructions' => 'Enter the price',
-                'required' => 1,
-                'column_width' => '',
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'formatting' => 'html',
-                'maxlength' => '',
-              ),
-              array (
-                'key' => 'field_59026a85a41db',
-                'label' => 'Add pricing details',
-                'name' => 'add_pricing_details',
-                'type' => 'textarea',
-                'instructions' => 'Add pricing details here. HTML/CSS is allowed.',
-                'required' => 1,
-                'column_width' => '',
-                'default_value' => '',
-                'placeholder' => '',
-                'maxlength' => '',
-                'rows' => '',
-                'formatting' => 'html',
-              ),
-				    ),
+					array (
+						'key' => 'field_59026a54a41da',
+						'label' => 'price',
+						'name' => 'price',
+						'type' => 'text',
+						'instructions' => 'Enter the price',
+						'required' => 1,
+						'column_width' => '',
+						'default_value' => '',
+						'placeholder' => '',
+						'prepend' => '',
+						'append' => '',
+						'formatting' => 'html',
+						'maxlength' => '',
+					),
+					array (
+						'key' => 'field_59026a85a41db',
+						'label' => 'Add pricing details',
+						'name' => 'add_pricing_details',
+						'type' => 'textarea',
+						'instructions' => 'Add pricing details here. HTML/CSS is allowed.',
+						'required' => 1,
+						'column_width' => '',
+						'default_value' => '',
+						'placeholder' => '',
+						'maxlength' => '',
+						'rows' => '',
+						'formatting' => 'html',
+					),
+				),
 				'row_min' => 1,
-				'layout' => 'row',
-				'button_label' => 'Add Price',
-        ),
-			),
-        'row_min' => 1,
+				'row_limit' => 3,
 				'layout' => 'row',
 				'button_label' => 'Add Row',
+			),
 		),
-		
-    ),
-    
-    
-    
-    
-    
-    
-    
-    'location' => array (
+		'location' => array (
 			array (
 				array (
 					'param' => 'post_type',
@@ -942,8 +922,6 @@ register_field_group(array (
 		),
 		'menu_order' => 0,
 	));
-
-
 	register_field_group(array (
 		'id' => 'acf_plans-and-pricing-page',
 		'title' => 'Plans and pricing page',
@@ -1081,128 +1059,5 @@ register_field_group(array (
 		),
 		'menu_order' => 0,
 	));
-	register_field_group(array (
-		'id' => 'acf_schedule-and-classes-fields',
-		'title' => 'Schedule and classes fields',
-		'fields' => array (
-			array (
-				'key' => 'field_599897181b548',
-				'label' => 'Hero BG Image',
-				'name' => 'hero_bg_image',
-				'type' => 'image',
-				'instructions' => 'Upload an image for the background',
-				'required' => 1,
-				'save_format' => 'url',
-				'preview_size' => 'thumbnail',
-				'library' => 'all',
-			),
-			array (
-				'key' => 'field_5998975e1b549',
-				'label' => 'Hero Title',
-				'name' => 'hero_title',
-				'type' => 'text',
-				'instructions' => 'Add hero title',
-				'required' => 1,
-				'default_value' => 'Schedule & Classes',
-				'placeholder' => 'Schedule & Classes',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_599897801b54a',
-				'label' => 'Hero subtitle',
-				'name' => 'hero_subtitle',
-				'type' => 'text',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_5998979b1b54b',
-				'label' => 'Button 1 Copy',
-				'name' => 'button_1_copy',
-				'type' => 'text',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_599897b31b54c',
-				'label' => 'Button 1 URL',
-				'name' => 'button_1_url',
-				'type' => 'text',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_599897bf1b54d',
-				'label' => 'Button 2 Copy',
-				'name' => 'button_2_copy',
-				'type' => 'text',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_599897c81b54e',
-				'label' => 'Button 2 URL',
-				'name' => 'button_2_url',
-				'type' => 'text',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_599897d31b54f',
-				'label' => 'Wodify iframe',
-				'name' => 'wodify_iframe',
-				'type' => 'text',
-				'required' => 1,
-				'default_value' => '<iframe src="https://app.wodify.com/wodify/PublicCalendarListView.aspx?tenant=2652" width="800" height="1800"></iframe>',
-				'placeholder' => '<iframe src="https://app.wodify.com/wodify/PublicCalendarListView.aspx?tenant=2652" width="800" height="1800"></iframe>',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-		),
-		'location' => array (
-			array (
-				array (
-					'param' => 'page_template',
-					'operator' => '==',
-					'value' => 'schedule.php',
-					'order_no' => 0,
-					'group_no' => 0,
-				),
-			),
-		),
-		'options' => array (
-			'position' => 'acf_after_title',
-			'layout' => 'no_box',
-			'hide_on_screen' => array (
-			),
-		),
-		'menu_order' => -1,
-	));
-
 } //endif;
 ?>

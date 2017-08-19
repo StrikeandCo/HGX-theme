@@ -39,35 +39,40 @@
 
 	<section>
 		<div class="container">
-			<h2 class="visible-sm"><?php echo get_field('plan_title'); ?></h2>
-			<div class="prices visible-sm">
-				<?php if( have_rows('plan_pricing') ) { ?>
-				<?php while ( have_rows('plan_pricing') ) : the_row(); ?>
-				<div class="tier">
-					<p class="tiertitle"><?php echo get_sub_field('tier_title'); ?></p>
-					<p class="price"><span class="dollar">$</span><?php echo get_sub_field('price'); ?></p>
-					<p><?php echo get_sub_field('add_pricing_details'); ?></p>
-				</div>
-				<?php endwhile; ?>
-				<?php } ?>
-			</div>
-			
+		
+			<!--<h2><?php echo get_field('plan_title'); ?></h2>-->
+				<!--small res-->
+
+			<!--hi res-->
 			
 			<div class="details">
-				<h2 class="hidden-sm"><?php echo get_field('plan_title'); ?></h2>
+				<h2><?php echo get_field('plan_title'); ?></h2>
 				<p><?php echo get_field('plan_details'); ?></p>
 				<a class="cta lg" href="#form-overlay">Let's talk</a>
 			</div>
-			<div class="prices hidden-xs hidden-sm">
+			<div class="prices">
+				
+				
+				
 				<?php if( have_rows('plan_pricing') ) { ?>
 				<?php while ( have_rows('plan_pricing') ) : the_row(); ?>
 				<div class="tier">
 					<p class="tiertitle"><?php echo get_sub_field('tier_title'); ?></p>
-					<p class="price"><span class="dollar">$</span><?php echo get_sub_field('price'); ?></p>
-					<p><?php echo get_sub_field('add_pricing_details'); ?></p>
+					<?php if( have_rows('plan_price') ) { ?>
+					<?php while ( have_rows('plan_price') ) : the_row(); ?>
+						<p>
+							<span class="price"><span class="dollar">$</span><?php echo get_sub_field('price'); ?></span><?php echo get_sub_field('add_pricing_details'); ?>
+						</p>
+					<?php endwhile; ?>
+					<?php } ?>
 				</div>
 				<?php endwhile; ?>
 				<?php } ?>
+			
+			
+			
+			
+			
 			</div>
 		</div>
 	</section>
